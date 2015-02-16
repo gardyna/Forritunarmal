@@ -1,4 +1,6 @@
 __author__ = 'Dagur'
 
+
 class Parser(object):
-	pass
+	def __init__(self, lexer):
+		self.lexer = lexer

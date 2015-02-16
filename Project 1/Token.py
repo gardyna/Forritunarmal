@@ -7,7 +7,7 @@ TokenCodes = Enum('TokenCodes', 'ID ASSIGN SEMICOL INT PLUS MINUS MULT LPAREN RP
 class Token(object):
 	def __init__(self, lexene, code):
 		self.lexene = lexene
-		self.tokenCode = TokenCodes[code].value
+		self.tCode = TokenCodes[code].value
 
 if __name__ == "__main__":
 	print("The token codes are:", list(TokenCodes))
